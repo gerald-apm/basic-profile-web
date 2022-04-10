@@ -1,12 +1,10 @@
-  application: geraldapm-profile
-  version: 1
-  runtime: nodejs14
-  api_version: 1
-  threadsafe: yes
+application: geraldapm-profile
+version: 1
+runtime: nodejs14
+api_version: 1
+threadsafe: yes
 
-
-  handlers:
-
+handlers:
   - url: /(.+)
     static_files: /\1
     upload: /(.*)
@@ -15,7 +13,7 @@
     static_files: /index.html
     upload: /index.html
 
-  skip_files:
+skip_files:
   - ^(.*/)?app\.yaml
   - ^(.*/)?app\.yml
   - ^(.*/)?#.*#
